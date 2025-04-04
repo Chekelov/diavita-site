@@ -1,56 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiaVita - Добре дошли</title>
+    <title>DiaVita - Натурална грижа</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #ffe4ec;
-        }
-        header {
-            background-color: #d94f7b;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #f4a3b5;
-            padding: 10px;
-        }
-        nav a {
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
+            background-color: #ffe6ee;
             color: #333;
         }
-        section {
-            padding: 40px;
+        header {
+            background-color: #e91e63;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            height: 50px;
+        }
+        nav {
+            background-color: #f8bbd0;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
         }
         .slider {
-            max-width: 600px;
-            margin: 0 auto;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
-            overflow: hidden;
+            display: flex;
+            overflow: auto;
+            scroll-snap-type: x mandatory;
+            margin: 20px auto;
+            max-width: 90%;
         }
         .slider img {
-            width: 100%;
-            display: block;
+            height: 200px;
+            margin: 0 10px;
+            scroll-snap-align: center;
+            border-radius: 15px;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: #d81b60;
         }
         .ideas {
-            margin-top: 40px;
-        }
-        .ideas h2, .contact h2 {
-            color: #d94f7b;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         footer {
-            background: #d94f7b;
+            background-color: #e91e63;
             color: white;
             text-align: center;
             padding: 15px;
@@ -60,23 +73,27 @@
 <body>
 
 <header>
+    <img src="logo.png" alt="DiaVita Logo">
     <h1>Добре дошли в DiaVita</h1>
     <p>Натурална грижа за диабет и тегло</p>
 </header>
 
 <nav>
+    <a href="index.html">Начало</a>
     <a href="products.html">Продукти</a>
-    <a href="#mission">Нашата мисия</a>
-    <a href="#contact">Контакт</a>
+    <a href="mission.html">Нашата мисия</a>
+    <a href="contact.html">Контакт</a>
 </nav>
 
-<section>
-    <div class="slider">
-        <img src="img1.jpg" alt="Продукт 1">
-    </div>
-</section>
+<div class="slider">
+    <img src="insurezist.jpg" alt="Инсурезист">
+    <img src="diabexin.jpg" alt="Диабексин">
+    <img src="slim.jpg" alt="Слийм Екстрийм">
+    <img src="glykofix.jpg" alt="Гликофикс">
+    <img src="ketoni.jpg" alt="Малинови кетони">
+</div>
 
-<section class="ideas" id="mission">
+<section class="ideas">
     <h2>Нашите идеи и задачи</h2>
     <ul>
         <li>✅ Да помагаме на хората да постигнат по-добър контрол върху здравето си чрез натурални средства.</li>
@@ -85,13 +102,8 @@
     </ul>
 </section>
 
-<section class="contact" id="contact">
-    <h2>Контакт</h2>
-    <p>Свържете се с нас чрез Facebook страницата <strong>DiaVita</strong> или изпратете директно съобщение в Messenger.</p>
-</section>
-
 <footer>
-    © 2025 DiaVita. Всички права запазени.
+    Свържете се с нас чрез Facebook страница <strong>DiaVita</strong> или изпратете съобщение в Messenger.
 </footer>
 
 </body>

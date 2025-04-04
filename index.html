@@ -3,62 +3,96 @@
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <title>DiaVita - Начало</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiaVita - Добре дошли</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #fff0f5; color: #333; }
-        header { background: #f06292; color: white; text-align: center; padding: 20px; position: relative; }
-        header img.logo { position: absolute; top: 10px; left: 10px; width: 80px; }
-        nav { background: #ffb6c1; padding: 10px; text-align: center; }
-        nav a { color: #333; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .slider { max-width: 800px; margin: 30px auto; position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2);}
-        .slides { display: flex; width: 300%; animation: slide 12s infinite; }
-        .slides img { width: 100%; }
-        @keyframes slide {
-            0% {margin-left: 0%;}
-            33% {margin-left: -100%;}
-            66% {margin-left: -200%;}
-            100% {margin-left: 0%;}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffe4ec;
         }
-        section { padding: 40px 20px; max-width: 800px; margin: auto; }
-        footer { background: #f06292; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+        header {
+            background-color: #d94f7b;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f4a3b5;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+        }
+        section {
+            padding: 40px;
+        }
+        .slider {
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .slider img {
+            width: 100%;
+            display: block;
+        }
+        .ideas {
+            margin-top: 40px;
+        }
+        .ideas h2, .contact h2 {
+            color: #d94f7b;
+        }
+        footer {
+            background: #d94f7b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="DiaVita Logo" class="logo">
-        <h1>Добре дошли в DiaVita</h1>
-        <p>Натурална грижа за диабет и тегло</p>
-    </header>
 
-    <nav>
-        <a href="products.html">Продукти</a>
-        <a href="#mission">Нашата мисия</a>
-        <a href="#contact">Контакт</a>
-    </nav>
+<header>
+    <h1>Добре дошли в DiaVita</h1>
+    <p>Натурална грижа за диабет и тегло</p>
+</header>
 
+<nav>
+    <a href="products.html">Продукти</a>
+    <a href="#mission">Нашата мисия</a>
+    <a href="#contact">Контакт</a>
+</nav>
+
+<section>
     <div class="slider">
-        <div class="slides">
-            <img src="slide1.jpg" alt="Снимка 1">
-            <img src="slide2.jpg" alt="Снимка 2">
-            <img src="slide3.jpg" alt="Снимка 3">
-        </div>
+        <img src="img1.jpg" alt="Продукт 1">
     </div>
+</section>
 
-    <section id="mission">
-        <h2>Нашите идеи и задачи</h2>
-        <p>✅ Да помагаме на хората да постигнат по-добър контрол върху здравето си чрез натурални средства.</p>
-        <p>✅ Да предлагаме продукти с доказано качество и безопасен състав.</p>
-        <p>✅ Да вдъхновяваме здравословен начин на живот чрез грижа, информация и мотивация.</p>
-    </section>
+<section class="ideas" id="mission">
+    <h2>Нашите идеи и задачи</h2>
+    <ul>
+        <li>✅ Да помагаме на хората да постигнат по-добър контрол върху здравето си чрез натурални средства.</li>
+        <li>✅ Да предлагаме продукти с доказано качество и безопасен състав.</li>
+        <li>✅ Да вдъхновяваме здравословен начин на живот чрез грижа, информация и мотивация.</li>
+    </ul>
+</section>
 
-    <section id="contact">
-        <h2>Контакт</h2>
-        <p>Свържете се с нас чрез Facebook страница <strong>DiaVita</strong> или изпратете директно съобщение в Messenger.</p>
-    </section>
+<section class="contact" id="contact">
+    <h2>Контакт</h2>
+    <p>Свържете се с нас чрез Facebook страницата <strong>DiaVita</strong> или изпратете директно съобщение в Messenger.</p>
+</section>
 
-    <footer>
-        &copy; 2025 DiaVita. Всички права запазени.
-    </footer>
+<footer>
+    © 2025 DiaVita. Всички права запазени.
+</footer>
+
 </body>
 </html>

@@ -3,142 +3,58 @@
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
+    <title>DiaVita - Начало</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiaVita - Здраве и Баланс</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #fff0f5;
-            color: #333;
+        body { font-family: Arial, sans-serif; margin: 0; background: #fff0f5; color: #333; }
+        header { background: #f06292; color: white; text-align: center; padding: 20px; position: relative; }
+        header img.logo { position: absolute; top: 10px; left: 10px; width: 80px; }
+        nav { background: #ffb6c1; padding: 10px; text-align: center; }
+        nav a { color: #333; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .slider { max-width: 800px; margin: 30px auto; position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2);}
+        .slides { display: flex; width: 300%; animation: slide 12s infinite; }
+        .slides img { width: 100%; }
+        @keyframes slide {
+            0% {margin-left: 0%;}
+            33% {margin-left: -100%;}
+            66% {margin-left: -200%;}
+            100% {margin-left: 0%;}
         }
-        header {
-            background-color: #f06292;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background: #ffb6c1;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #333;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 40px 20px;
-        }
-        .product {
-            background: white;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 15px;
-            max-width: 700px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        .product img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 15px;
-        }
-        .product button {
-            background: #f06292;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        footer {
-            text-align: center;
-            background: #f06292;
-            color: white;
-            padding: 20px;
-        }
-        .review {
-            background: #ffeef3;
-            margin: 10px auto;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 700px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        }
+        section { padding: 40px 20px; max-width: 800px; margin: auto; }
+        footer { background: #f06292; color: white; text-align: center; padding: 20px; margin-top: 40px; }
     </style>
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="DiaVita Logo" class="logo">
         <h1>Добре дошли в DiaVita</h1>
-        <p>Натурални продукти за диабет и отслабване</p>
+        <p>Натурална грижа за диабет и тегло</p>
     </header>
 
     <nav>
-        <a href="#products">Продукти</a>
-        <a href="#reviews">Отзиви</a>
-        <a href="#about">За нас</a>
+        <a href="products.html">Продукти</a>
+        <a href="#mission">Нашата мисия</a>
         <a href="#contact">Контакт</a>
     </nav>
 
-    <section id="products">
-        <h2>Нашите продукти</h2>
-
-        <div class="product">
-            <img src="insurezist.jpg" alt="Инсурезист">
-            <h3>Инсурезист - 28,30 лв.</h3>
-            <p>Подпомага баланса на кръвната захар и инсулиновата чувствителност.</p>
-            <button onclick="window.location.href='https://m.me/DiaVita.bg'">Поръчай сега</button>
+    <div class="slider">
+        <div class="slides">
+            <img src="slide1.jpg" alt="Снимка 1">
+            <img src="slide2.jpg" alt="Снимка 2">
+            <img src="slide3.jpg" alt="Снимка 3">
         </div>
+    </div>
 
-        <div class="product">
-            <img src="diabexin.jpg" alt="Диабексин">
-            <h3>Диабексин - 24,00 лв.</h3>
-            <p>Формула с инсулиноподобно действие и натурални билки за контрол на глюкозата.</p>
-            <button onclick="window.location.href='https://m.me/DiaVita.bg'">Поръчай сега</button>
-        </div>
-
-        <div class="product">
-            <img src="slim.jpg" alt="Слим Екстрийм">
-            <h3>Слим Екстрийм - 24,00 лв.</h3>
-            <p>Ускорява метаболизма и помага за изгарянето на мазнини.</p>
-            <button onclick="window.location.href='https://m.me/DiaVita.bg'">Поръчай сега</button>
-        </div>
-
-        <div class="product">
-            <img src="glykofix.jpg" alt="ГликоФикс">
-            <h3>ГликоФикс - 28,30 лв.</h3>
-            <p>Намалява инсулиновата резистентност и апетита. Подходящ при метаболитен синдром.</p>
-            <button onclick="window.location.href='https://m.me/DiaVita.bg'">Поръчай сега</button>
-        </div>
-
-        <div class="product">
-            <img src="ketoni.jpg" alt="Малинови кетони">
-            <h3>Малинови кетони - 27,00 лв.</h3>
-            <p>Стимулират разграждането на мазнини и подобряват тонуса.</p>
-            <button onclick="window.location.href='https://m.me/DiaVita.bg'">Поръчай сега</button>
-        </div>
-    </section>
-
-    <section id="reviews">
-        <h2>Отзиви от клиенти</h2>
-        <div class="review">🌟 "Използвам Инсурезист вече месец и съм много доволен. Захарта ми е стабилна!"</div>
-        <div class="review">🌟 "Слим Екстрийм ми помогна да сваля 3 килограма за две седмици без диети!"</div>
-        <div class="review">🌟 "Благодаря за Гликофикс – апетитът ми намаля и се чувствам страхотно."</div>
-    </section>
-
-    <section id="about">
-        <h2>За DiaVita</h2>
-        <p>Ние сме бранд, насочен към хора с диабет тип 2, инсулинова резистентност и наднормено тегло. Нашата мисия е да помогнем на повече хора да постигнат здраве и енергия чрез безопасни, натурални формули.</p>
+    <section id="mission">
+        <h2>Нашите идеи и задачи</h2>
+        <p>✅ Да помагаме на хората да постигнат по-добър контрол върху здравето си чрез натурални средства.</p>
+        <p>✅ Да предлагаме продукти с доказано качество и безопасен състав.</p>
+        <p>✅ Да вдъхновяваме здравословен начин на живот чрез грижа, информация и мотивация.</p>
     </section>
 
     <section id="contact">
         <h2>Контакт</h2>
-        <p>Пишете ни във Facebook страница <strong>DiaVita</strong>, за да направите поръчка или да получите повече информация.</p>
+        <p>Свържете се с нас чрез Facebook страница <strong>DiaVita</strong> или изпратете директно съобщение в Messenger.</p>
     </section>
 
     <footer>

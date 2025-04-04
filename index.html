@@ -1,110 +1,111 @@
+
 <!DOCTYPE html>
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiaVita - Натурална грижа</title>
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #ffe6ee;
-            color: #333;
+            margin: 0;
+            background-color: #ffeeee;
         }
         header {
-            background-color: #e91e63;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            position: relative;
+            background-color: #cc3366;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
         }
         header img {
-            position: absolute;
-            left: 20px;
-            top: 15px;
             height: 50px;
+            margin-right: 20px;
+        }
+        header h1 {
+            color: white;
+            margin: 0;
         }
         nav {
-            background-color: #f8bbd0;
-            padding: 10px;
+            background-color: #f7a1bc;
             text-align: center;
+            padding: 10px;
         }
         nav a {
-            color: #333;
-            margin: 0 15px;
+            color: #000;
+            margin: 0 20px;
             text-decoration: none;
             font-weight: bold;
         }
         .slider {
-            display: flex;
-            overflow: auto;
-            scroll-snap-type: x mandatory;
+            width: 90%;
             margin: 20px auto;
-            max-width: 90%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #999;
         }
-        .slider img {
-            height: 200px;
-            margin: 0 10px;
-            scroll-snap-align: center;
-            border-radius: 15px;
+        .slides {
+            display: flex;
+            width: 500%;
+            animation: slide 10s infinite;
         }
-        section {
+        .slides img {
+            width: 100%;
+            height: auto;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            45% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            70% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            95% { transform: translateX(-300%); }
+            100% { transform: translateX(-400%); }
+        }
+        .mission {
+            background: #fff;
+            margin: 30px;
             padding: 20px;
-        }
-        h2 {
-            color: #d81b60;
-        }
-        .ideas {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            max-width: 700px;
-            margin: 0 auto 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
         }
         footer {
-            background-color: #e91e63;
+            background: #cc3366;
             color: white;
             text-align: center;
-            padding: 15px;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <img src="logo.png" alt="DiaVita Logo">
-    <h1>Добре дошли в DiaVita</h1>
-    <p>Натурална грижа за диабет и тегло</p>
-</header>
-
-<nav>
-    <a href="index.html">Начало</a>
-    <a href="products.html">Продукти</a>
-    <a href="mission.html">Нашата мисия</a>
-    <a href="contact.html">Контакт</a>
-</nav>
-
-<div class="slider">
-    <img src="insurezist.jpg" alt="Инсурезист">
-    <img src="diabexin.jpg" alt="Диабексин">
-    <img src="slim.jpg" alt="Слийм Екстрийм">
-    <img src="glykofix.jpg" alt="Гликофикс">
-    <img src="ketoni.jpg" alt="Малинови кетони">
-</div>
-
-<section class="ideas">
-    <h2>Нашите идеи и задачи</h2>
-    <ul>
-        <li>✅ Да помагаме на хората да постигнат по-добър контрол върху здравето си чрез натурални средства.</li>
-        <li>✅ Да предлагаме продукти с доказано качество и безопасен състав.</li>
-        <li>✅ Да вдъхновяваме здравословен начин на живот чрез грижа, информация и мотивация.</li>
-    </ul>
-</section>
-
-<footer>
-    Свържете се с нас чрез Facebook страница <strong>DiaVita</strong> или изпратете съобщение в Messenger.
-</footer>
-
+    <header>
+        <img src="logo.jpg" alt="DiaVita Logo">
+        <h1>Добре дошли в DiaVita</h1>
+    </header>
+    <nav>
+        <a href="#">Начало</a>
+        <a href="#">Продукти</a>
+        <a href="#">Нашата мисия</a>
+        <a href="#">Контакт</a>
+    </nav>
+    <div class="slider">
+        <div class="slides">
+            <img src="insurezist.jpg" alt="Insurezist">
+            <img src="diabexin.jpg" alt="Diabexin">
+            <img src="slim.jpg" alt="Slim Extreme">
+            <img src="glykofix.jpg" alt="GlykoFix">
+            <img src="ketoni.jpg" alt="Ketoni">
+        </div>
+    </div>
+    <div class="mission">
+        <h2>Нашите идеи и задачи</h2>
+        <ul>
+            <li>✅ Да помагаме на хората да постигнат по-добър контрол върху здравето си чрез натурални средства.</li>
+            <li>✅ Да предлагаме продукти с доказано качество и безопасен състав.</li>
+            <li>✅ Да вдъхновяваме здравословен начин на живот чрез грижа, информация и мотивация.</li>
+        </ul>
+    </div>
+    <footer>
+        Свържете се с нас чрез Facebook страницата <strong>DiaVita</strong> или изпратете съобщение в Messenger.
+    </footer>
 </body>
 </html>

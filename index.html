@@ -3,73 +3,52 @@
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <title>DiaVita - Натурална грижа</title>
+    <title>DiaVita – Натурална грижа</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #ffeef3;
             margin: 0;
-            background-color: #ffeeee;
+            padding: 0;
         }
         header {
-            background-color: #cc3366;
-            padding: 10px 20px;
+            background-color: #c8325d;
+            color: white;
+            padding: 20px;
             display: flex;
             align-items: center;
         }
         header img {
             height: 50px;
-            margin-right: 20px;
-        }
-        header h1 {
-            color: white;
-            margin: 0;
+            margin-right: 15px;
         }
         nav {
-            background-color: #f7a1bc;
+            background-color: #e58ba3;
+            padding: 10px 0;
             text-align: center;
-            padding: 10px;
         }
         nav a {
-            color: #000;
-            margin: 0 20px;
-            text-decoration: none;
+            margin: 0 15px;
+            color: black;
             font-weight: bold;
+            text-decoration: none;
         }
         .slider {
-            width: 90%;
-            margin: 20px auto;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 0 10px #999;
-        }
-        .slides {
             display: flex;
-            width: 500%;
-            animation: slide 10s infinite;
-        }
-        .slides img {
-            width: 100%;
-            height: auto;
-        }
-        @keyframes slide {
-            0% { transform: translateX(0); }
-            20% { transform: translateX(0); }
-            25% { transform: translateX(-100%); }
-            45% { transform: translateX(-100%); }
-            50% { transform: translateX(-200%); }
-            70% { transform: translateX(-200%); }
-            75% { transform: translateX(-300%); }
-            95% { transform: translateX(-300%); }
-            100% { transform: translateX(-400%); }
-        }
-        .mission {
-            background: #fff;
-            margin: 30px;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
             padding: 20px;
+            background-color: #fff0f5;
+        }
+        .slider img {
+            width: 300px;
+            height: auto;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         footer {
-            background: #cc3366;
+            background-color: #c8325d;
             color: white;
             text-align: center;
             padding: 10px;
@@ -88,24 +67,14 @@
         <a href="#">Контакт</a>
     </nav>
     <div class="slider">
-        <div class="slides">
-            <img src="insurezist.jpg" alt="Insurezist">
-            <img src="diabexin.jpg" alt="Diabexin">
-            <img src="slim.jpg" alt="Slim Extreme">
-            <img src="glykofix.jpg" alt="GlykoFix">
-            <img src="ketoni.jpg" alt="Ketoni">
-        </div>
-    </div>
-    <div class="mission">
-        <h2>Нашите идеи и задачи</h2>
-        <ul>
-            <li>✅ Да помагаме на хората да постигнат по-добър контрол върху здравето си чрез натурални средства.</li>
-            <li>✅ Да предлагаме продукти с доказано качество и безопасен състав.</li>
-            <li>✅ Да вдъхновяваме здравословен начин на живот чрез грижа, информация и мотивация.</li>
-        </ul>
+        <img src="insurezist.jpg" alt="Инсурезист">
+        <img src="diabexin.jpg" alt="Диабексин">
+        <img src="slim.jpg" alt="Слийм Екстрийм">
+        <img src="glykofix.jpg" alt="Гликофикс">
+        <img src="ketoni.jpg" alt="Малинови кетони">
     </div>
     <footer>
-        Свържете се с нас чрез Facebook страницата <strong>DiaVita</strong> или изпратете съобщение в Messenger.
+        Свържете се с нас във Facebook или Messenger!
     </footer>
 </body>
 </html>

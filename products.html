@@ -3,44 +3,96 @@
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Нашите продукти</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Нашите продукти - DiaVita</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6ee;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #c73567;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            background-color: #f29cae;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .product-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .product {
+            margin: 20px;
+            text-align: center;
+        }
+        .product img {
+            width: 200px;
+            height: auto;
+            border-radius: 12px;
+        }
+        .product a {
+            text-decoration: none;
+            color: #c73567;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="DiaVita Logo" class="logo">
         <h1>Нашите продукти</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Начало</a></li>
-                <li><a href="products.html">Продукти</a></li>
-                <li><a href="mission.html">Нашата мисия</a></li>
-                <li><a href="contact.html">Контакт</a></li>
-            </ul>
-        </nav>
     </header>
-    <main class="products-grid">
-        <a href="insurezist.html" class="product-card">
-            <img src="insurezist.jpg" alt="Инсурезист">
-            <h3>Инсурезист</h3>
-        </a>
-        <a href="diabexin.html" class="product-card">
-            <img src="diabexin.jpg" alt="Диабексин">
-            <h3>Диабексин</h3>
-        </a>
-        <a href="slim.html" class="product-card">
-            <img src="slim.jpg" alt="Слийм Екстрийм">
-            <h3>Слийм Екстрийм</h3>
-        </a>
-        <a href="glykofix.html" class="product-card">
-            <img src="glykofix.jpg" alt="Гликофикс">
-            <h3>Гликофикс</h3>
-        </a>
-        <a href="ketoni.html" class="product-card">
-            <img src="ketoni.jpg" alt="Малинови кетони">
-            <h3>Малинови кетони</h3>
-        </a>
-    </main>
+    <nav>
+        <a href="index.html">Начало</a>
+        <a href="products.html">Продукти</a>
+        <a href="mission.html">Нашата мисия</a>
+        <a href="contact.html">Контакт</a>
+    </nav>
+    <div class="product-gallery">
+        <div class="product">
+            <a href="insurezist.html">
+                <img src="images/insurezist.jpg" alt="Инсурезист">
+                Инсурезист
+            </a>
+        </div>
+        <div class="product">
+            <a href="diabexin.html">
+                <img src="images/diabexin.jpg" alt="Диабексин">
+                Диабексин
+            </a>
+        </div>
+        <div class="product">
+            <a href="slim-extreme.html">
+                <img src="images/slim-extreme.jpg" alt="Слийм Екстрийм">
+                Слийм Екстрийм
+            </a>
+        </div>
+        <div class="product">
+            <a href="glykofix.html">
+                <img src="images/glykofix.jpg" alt="Гликофикс">
+                Гликофикс
+            </a>
+        </div>
+        <div class="product">
+            <a href="raspberry-ketones.html">
+                <img src="images/raspberry-ketones.jpg" alt="Малинови кетони">
+                Малинови кетони
+            </a>
+        </div>
+    </div>
 </body>
 </html>

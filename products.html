@@ -3,120 +3,96 @@
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <title>Нашите продукти</title>
+    <title>Нашите продукти - DiaVita</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffe6f0;
+            background-color: #ffe6ee;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #c43c64;
-            padding: 10px;
+            background-color: #c73567;
+            padding: 20px;
             color: white;
-            display: flex;
-            align-items: center;
-        }
-        header img {
-            height: 40px;
-            margin-right: 15px;
+            text-align: center;
         }
         nav {
-            background-color: #f08aa6;
-            text-align: center;
+            background-color: #f29cae;
             padding: 10px;
+            text-align: center;
         }
         nav a {
-            color: black;
             margin: 0 15px;
+            color: black;
             font-weight: bold;
             text-decoration: none;
         }
-        h1 {
-            text-align: center;
-            color: white;
-            background-color: #c43c64;
-            margin: 0;
-            padding: 20px 0;
-        }
-        .product-container {
+        .product-gallery {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            margin: 30px;
+            flex-wrap: wrap;
+            padding: 30px;
         }
         .product {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin: 15px;
-            padding: 15px;
+            margin: 20px;
             text-align: center;
-            width: 220px;
         }
         .product img {
-            width: 100%;
-            border-radius: 5px;
+            width: 200px;
+            height: auto;
+            border-radius: 12px;
         }
-        .product h3 {
-            margin: 10px 0 5px;
-            font-size: 18px;
-        }
-        .product p {
-            font-size: 16px;
-            color: #c43c64;
+        .product a {
+            text-decoration: none;
+            color: #c73567;
             font-weight: bold;
+            display: block;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="DiaVita Logo">
-        <h2>Нашите продукти</h2>
+        <h1>Нашите продукти</h1>
     </header>
     <nav>
         <a href="index.html">Начало</a>
         <a href="products.html">Продукти</a>
-        <a href="#mission">Нашата мисия</a>
-        <a href="#contact">Контакт</a>
+        <a href="mission.html">Нашата мисия</a>
+        <a href="contact.html">Контакт</a>
     </nav>
-    <div class="product-container">
+    <div class="product-gallery">
         <div class="product">
-            <img src="insurezist.jpg" alt="Инсурезист">
-            <h3>Инсурезист</h3>
-            <p>28,30 лв.</p>
+            <a href="insurezist.html">
+                <img src="images/insurezist.jpg" alt="Инсурезист">
+                Инсурезист
+            </a>
         </div>
         <div class="product">
-            <img src="diabexin.jpg" alt="Диабексин">
-            <h3>Диабексин</h3>
-            <p>24,00 лв.</p>
+            <a href="diabexin.html">
+                <img src="images/diabexin.jpg" alt="Диабексин">
+                Диабексин
+            </a>
         </div>
         <div class="product">
-            <img src="slim.jpg" alt="Слийм Екстрийм">
-            <h3>Слийм Екстрийм</h3>
-            <p>24,00 лв.</p>
+            <a href="slim-extreme.html">
+                <img src="images/slim-extreme.jpg" alt="Слийм Екстрийм">
+                Слийм Екстрийм
+            </a>
         </div>
         <div class="product">
-            <img src="glykofix.jpg" alt="Гликофикс">
-            <h3>Гликофикс</h3>
-            <p>28,30 лв.</p>
+            <a href="glykofix.html">
+                <img src="images/glykofix.jpg" alt="Гликофикс">
+                Гликофикс
+            </a>
         </div>
         <div class="product">
-            <img src="ketoni.jpg" alt="Малинови кетони">
-            <h3>Малинови кетони</h3>
-            <p>27,00 лв.</p>
+            <a href="raspberry-ketones.html">
+                <img src="images/raspberry-ketones.jpg" alt="Малинови кетони">
+                Малинови кетони
+            </a>
         </div>
     </div>
-
-<div class="benefits-section" style="margin-top: 50px;">
-  <h2>Ползи от нашите продукти</h2>
-  <p><strong>Инсурезист</strong> – Подобрява инсулиновата чувствителност и поддържа здравословни нива на кръвната захар.</p>
-  <p><strong>Диабексин</strong> – Насърчава нормализирането на глюкозата и допринася за хормоналния баланс.</p>
-  <p><strong>Слийм Екстрийм</strong> – Стимулира метаболизма и подкрепя изгарянето на мазнини при отслабване.</p>
-  <p><strong>Гликофикс</strong> – Допринася за контрол на кръвната захар и защитава клетките от оксидативен стрес.</p>
-  <p><strong>Малинови кетони</strong> – Подпомага редукцията на телесното тегло чрез естествени термогенни свойства.</p>
-</div>
-
 </body>
 </html>

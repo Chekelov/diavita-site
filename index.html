@@ -1,62 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <title>Добре дошли в DiaVita</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiaVita - Начало</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffe6f0;
             margin: 0;
-            padding: 0;
+            background-color: #ffeef2;
         }
         header {
-            background-color: #c03960;
+            background-color: #c0355c;
+            color: white;
             padding: 20px;
             display: flex;
             align-items: center;
         }
         header img {
             height: 50px;
-            margin-right: 20px;
-        }
-        header h1 {
-            color: white;
-            font-size: 28px;
-            margin: 0;
+            margin-right: 15px;
         }
         nav {
-            background-color: #f59fb3;
+            background-color: #e1839e;
             display: flex;
             justify-content: center;
-            padding: 10px 0;
         }
         nav a {
-            margin: 0 15px;
             color: black;
+            padding: 15px 25px;
             text-decoration: none;
             font-weight: bold;
         }
-        .slideshow {
+        nav a:hover {
+            background-color: #f9b6c7;
+        }
+        .slider {
             display: flex;
-            overflow-x: auto;
-            scroll-behavior: smooth;
+            overflow: hidden;
+            justify-content: center;
             padding: 20px;
         }
-        .slideshow img {
-            height: 250px;
-            margin-right: 15px;
+        .slider img {
+            height: 300px;
+            margin: 0 10px;
             border-radius: 10px;
+            animation: slide 15s linear infinite;
         }
-        .mission {
-            padding: 30px;
-            background: #fff;
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .mission-box {
+            background: white;
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 800px;
             border-radius: 10px;
-            width: 80%;
-            margin: 30px auto;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
         }
-        .footer {
-            background-color: #c03960;
+        footer {
+            background-color: #c0355c;
             color: white;
             text-align: center;
             padding: 10px;
@@ -64,36 +69,39 @@
     </style>
 </head>
 <body>
-    <header>
-        <img src="logo.jpg" alt="DiaVita Logo">
-        <h1>Добре дошли в DiaVita</h1>
-    </header>
-    <nav>
-        <a href="index.html">Начало</a>
-        <a href="products.html">Продукти</a>
-        <a href="#mission">Нашата мисия</a>
-        <a href="#contact">Контакт</a>
-    </nav>
 
-    <div class="slideshow">
-        <img src="insurezist.jpg" alt="Инсурезист">
-        <img src="diabexin.jpg" alt="Диабексин">
-        <img src="slim.jpg" alt="Слийм">
-        <img src="glykofix.jpg" alt="Гликофикс">
-        <img src="ketoni.jpg" alt="Кетони">
-    </div>
+<header>
+    <img src="logo.jpg" alt="DiaVita Logo">
+    <h1>Добре дошли в DiaVita</h1>
+</header>
 
-    <div id="mission" class="mission">
-        <h2>Нашите идеи и задачи</h2>
-        <ul>
-            <li>✅ Да помагаме на хората да постигнат по-добър контрол върху здравето си чрез натурални средства.</li>
-            <li>✅ Да предлагаме продукти с доказано качество и безопасен състав.</li>
-            <li>✅ Да вдъхновяваме здравословен начин на живот чрез грижа, информация и мотивация.</li>
-        </ul>
-    </div>
+<nav>
+    <a href="#">Начало</a>
+    <a href="#">Продукти</a>
+    <a href="#">Нашата мисия</a>
+    <a href="#">Контакт</a>
+</nav>
 
-    <div id="contact" class="footer">
-        Свържете се с нас във Facebook или Messenger!
-    </div>
+<div class="slider">
+    <img src="insurezist.jpg" alt="Insurezist">
+    <img src="diabexin.jpg" alt="Diabexin">
+    <img src="slim.jpg" alt="Slim Extreme">
+    <img src="glykofix.jpg" alt="GlykoFix">
+    <img src="ketoni.jpg" alt="Raspberry Ketones">
+</div>
+
+<div class="mission-box">
+    <h2>Нашата идея и цели</h2>
+    <ul>
+        <li>✅ Да помагаме на хората да постигнат по-добър контрол върху здравето си чрез натурални средства.</li>
+        <li>✅ Да предлагаме продукти с доказано качество и безопасен състав.</li>
+        <li>✅ Да вдъхновяваме здравословен начин на живот чрез грижа, информация и мотивация.</li>
+    </ul>
+</div>
+
+<footer>
+    Свържете се с нас чрез Facebook или Messenger!
+</footer>
+
 </body>
 </html>

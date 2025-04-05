@@ -3,16 +3,16 @@
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiaVita - Начало</title>
+    <title>DiaVita – Натурална грижа</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #ffeef3;
             margin: 0;
-            background-color: #ffeef2;
+            padding: 0;
         }
         header {
-            background-color: #c0355c;
+            background-color: #c8325d;
             color: white;
             padding: 20px;
             display: flex;
@@ -23,45 +23,32 @@
             margin-right: 15px;
         }
         nav {
-            background-color: #e1839e;
-            display: flex;
-            justify-content: center;
+            background-color: #e58ba3;
+            padding: 10px 0;
+            text-align: center;
         }
         nav a {
+            margin: 0 15px;
             color: black;
-            padding: 15px 25px;
-            text-decoration: none;
             font-weight: bold;
-        }
-        nav a:hover {
-            background-color: #f9b6c7;
+            text-decoration: none;
         }
         .slider {
             display: flex;
-            overflow: hidden;
             justify-content: center;
+            align-items: center;
+            gap: 15px;
             padding: 20px;
+            background-color: #fff0f5;
         }
         .slider img {
-            height: 300px;
-            margin: 0 10px;
+            width: 300px;
+            height: auto;
             border-radius: 10px;
-            animation: slide 15s linear infinite;
-        }
-        @keyframes slide {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-100%); }
-        }
-        .mission-box {
-            background: white;
-            margin: 40px auto;
-            padding: 20px;
-            max-width: 800px;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         footer {
-            background-color: #c0355c;
+            background-color: #c8325d;
             color: white;
             text-align: center;
             padding: 10px;
@@ -69,39 +56,25 @@
     </style>
 </head>
 <body>
-
-<header>
-    <img src="logo.jpg" alt="DiaVita Logo">
-    <h1>Добре дошли в DiaVita</h1>
-</header>
-
-<nav>
-    <a href="#">Начало</a>
-    <a href="#">Продукти</a>
-    <a href="#">Нашата мисия</a>
-    <a href="#">Контакт</a>
-</nav>
-
-<div class="slider">
-    <img src="insurezist.jpg" alt="Insurezist">
-    <img src="diabexin.jpg" alt="Diabexin">
-    <img src="slim.jpg" alt="Slim Extreme">
-    <img src="glykofix.jpg" alt="GlykoFix">
-    <img src="ketoni.jpg" alt="Raspberry Ketones">
-</div>
-
-<div class="mission-box">
-    <h2>Нашата идея и цели</h2>
-    <ul>
-        <li>✅ Да помагаме на хората да постигнат по-добър контрол върху здравето си чрез натурални средства.</li>
-        <li>✅ Да предлагаме продукти с доказано качество и безопасен състав.</li>
-        <li>✅ Да вдъхновяваме здравословен начин на живот чрез грижа, информация и мотивация.</li>
-    </ul>
-</div>
-
-<footer>
-    Свържете се с нас чрез Facebook или Messenger!
-</footer>
-
+    <header>
+        <img src="logo.jpg" alt="DiaVita Logo">
+        <h1>Добре дошли в DiaVita</h1>
+    </header>
+    <nav>
+        <a href="#">Начало</a>
+        <a href="#">Продукти</a>
+        <a href="#">Нашата мисия</a>
+        <a href="#">Контакт</a>
+    </nav>
+    <div class="slider">
+        <img src="insurezist.jpg" alt="Инсурезист">
+        <img src="diabexin.jpg" alt="Диабексин">
+        <img src="slim.jpg" alt="Слийм Екстрийм">
+        <img src="glykofix.jpg" alt="Гликофикс">
+        <img src="ketoni.jpg" alt="Малинови кетони">
+    </div>
+    <footer>
+        Свържете се с нас във Facebook или Messenger!
+    </footer>
 </body>
 </html>

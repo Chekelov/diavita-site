@@ -3,90 +3,100 @@
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <title>DiaVita – Натурална грижа</title>
+    <title>DiaVita</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffeef3;
+            background-color: #ffe6f0;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #c8325d;
+            background-color: #b3305b;
             color: white;
             padding: 20px;
-            display: flex;
-            align-items: center;
-        }
-        header img {
-            height: 50px;
-            margin-right: 15px;
+            text-align: center;
         }
         nav {
-            background-color: #e58ba3;
-            padding: 10px 0;
+            background-color: #e68aa3;
+            padding: 10px;
             text-align: center;
         }
         nav a {
-            margin: 0 15px;
             color: black;
-            font-weight: bold;
+            margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
         }
-        .slider {
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .products {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            padding: 20px;
-            background-color: #fff0f5;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
         }
-        .slider img {
-            width: 300px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        .product {
+            width: 200px;
+            background: white;
+            border-radius: 8px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px #ccc;
+        }
+        .product img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .description {
+            padding: 20px;
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ccc;
         }
         footer {
-            background-color: #c8325d;
+            background-color: #b3305b;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="DiaVita Logo">
         <h1>Добре дошли в DiaVita</h1>
+        <p>Натурална грижа за диабет и тегло</p>
     </header>
     <nav>
         <a href="index.html">Начало</a>
-        <a href="index.html">Продукти</a>
-        <a href="index.html">Нашата мисия</a>
-        <a href="index.html">Контакт</a>
+        <a href="products.html">Продукти</a>
+        <a href="mission.html">Нашата мисия</a>
+        <a href="contact.html">Контакт</a>
     </nav>
-    <div class="slider">
-        <img src="insurezist.jpg" alt="Инсурезист">
-        <img src="diabexin.jpg" alt="Диабексин">
-        <img src="slim.jpg" alt="Слийм Екстрийм">
-        <img src="glykofix.jpg" alt="Гликофикс">
-        <img src="ketoni.jpg" alt="Малинови кетони">
+    <div class="products">
+        <div class="product"><img src="insurezist.jpg" alt="Инсурезист"></div>
+        <div class="product"><img src="diabexin.jpg" alt="Диабексин"></div>
+        <div class="product"><img src="slim.jpg" alt="Слийм Екстрийм"></div>
+        <div class="product"><img src="glycofix.jpg" alt="Гликофикс"></div>
+        <div class="product"><img src="raspberry.jpg" alt="Малинови кетони"></div>
+    </div>
+    <div class="description">
+        <h2>Нашата идея и цели</h2>
+        <ul>
+            <li>✅ Да помагаме на хората да постигнат по-добър контрол върху здравето си чрез натурални средства.</li>
+            <li>✅ Да предлагаме продукти с доказано качество и безопасен състав.</li>
+            <li>✅ Да вдъхновяваме здравословен начин на живот чрез грижа, информация и мотивация.</li>
+        </ul>
     </div>
     <footer>
-        Свържете се с нас във Facebook или Messenger!
+        Свържете се с нас чрез Facebook или Messenger!
     </footer>
-
-<section style="padding: 20px; background-color: #fff3f6; margin-top: 20px;">
-  <div style="max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px;">
-    <h2>Нашата идея и цели</h2>
-    <ul>
-      <li>✅ Да помагаме на хората да постигнат по-добър контрол върху здравето си чрез натурални средства.</li>
-      <li>✅ Да предлагаме продукти с доказано качество и безопасен състав.</li>
-      <li>✅ Да вдъхновяваме здравословен начин на живот чрез грижа, информация и мотивация.</li>
-    </ul>
-  </div>
-</section>
-
 </body>
 </html>
